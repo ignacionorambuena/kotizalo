@@ -25,15 +25,15 @@
 <ul class="nav navbar-nav navbar-right">
 
 <li><a class="disabled"><i class="fa fa-briefcase"></i> <?php echo $nameEmp; ?> | Saldo: <?php if($saldoEmp>3000){ echo "<b class='text-success'>".number_format($saldoEmp)."</b>";}else{echo "<b class='text-warning'>".number_format($saldoEmp)."</b>";}?></a></li>
-<li><a href="/empresa"><i class="fa fa-home"></i> Inicio</a></li>
-<li><a href="/empresa/recargar"><i class="fa fa-money"></i> Recargar Saldo</a></li>
+<li><a href="<?php echo base_url('/empresa');?>"><i class="fa fa-home"></i> Inicio</a></li>
+<li><a href="<?php echo base_url('/empresa/recargar');?>"><i class="fa fa-money"></i> Recargar Saldo</a></li>
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-cogs"></i> Configuración</a>
 <ul class="dropdown-menu">
-<li><a href="/empresa/configurar" class=""><i class="fa fa-cogs"></i> Configurar Empresa</a></li>
-<li><a href="/empresa/password" class=""><i class="fa fa-lock"></i> Actualizar Contraseña</a></li>
-<li><a href="/publicaciones" class=""><i class="fa fa-search"></i> Buscar Trabajos</a></li>
-<li><a href="/empresa/compras" class=""><i class="fa fa-shopping-cart"></i> Mis Compras <span class="badge pull-right"><?php
+<li><a href="<?php echo base_url('/empresa/configurar');?>" class=""><i class="fa fa-cogs"></i> Configurar Empresa</a></li>
+<li><a href="<?php echo base_url('/empresa/password');?>" class=""><i class="fa fa-lock"></i> Actualizar Contraseña</a></li>
+<li><a href="<?php echo base_url('/publicaciones');?>" class=""><i class="fa fa-search"></i> Buscar Trabajos</a></li>
+<li><a href="<?php echo base_url('/empresa/compras');?>" class=""><i class="fa fa-shopping-cart"></i> Mis Compras <span class="badge pull-right"><?php
 foreach($cont as $cc)
 {
 ?>
@@ -41,10 +41,10 @@ foreach($cont as $cc)
 <?php
 }
 ?></span></a></li>
-<li><a href="/empresa/rubros" class=""><i class="fa fa-globe"></i> Seleccionar Rubros</a></li>
+<li><a href="<?php echo base_url('/empresa/rubros');?>" class=""><i class="fa fa-globe"></i> Seleccionar Rubros</a></li>
 </ul>
 </li>
-<li><a href="/empresa/logout" style="color:red;"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
+<li><a href="<?php echo base_url('/empresa/logout');?>" style="color:red;"><i class="fa fa-sign-out"></i> Cerrar Sesión</a></li>
 
 <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 </ul>

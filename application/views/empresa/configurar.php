@@ -25,11 +25,7 @@ $("#localidad").html(data);
 <div class="panel-body">
 <div class="row">
 <?php foreach ($datosEmpresa as $key) { ?>
-<?php
-$atributos = array( 'id' => 'form','name'=>'form');
-//echo form_open(null, $atributos);
-echo form_open(null,$atributos);
-?>
+<?php echo form_open('/empresa/configurar', 'post');?>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 <h4><i class="fa fa-building"></i> Datos Empresa</h4>
 </div>

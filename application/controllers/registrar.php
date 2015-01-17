@@ -19,7 +19,7 @@ if(isset($_POST['aceptar']) and $_POST['aceptar'] == 1)
 {
 //SI EXISTE EL CAMPO OCULTO LLAMADO GRABAR CREAMOS LAS VALIDACIONES
 $this->form_validation->set_rules('encargado','Nombre del Encargado','required|trim|xss_clean');
-$this->form_validation->set_rules('mail','Correo Electrónico','required|valid_email|trim|xss_clean');
+$this->form_validation->set_rules('mail','Correo Electrónico','required|valid_email|trim|xss_clean|is_unique[empresa.mailEnc]');
 $this->form_validation->set_rules('phone','Teléfono','required|trim|xss_clean');
 $this->form_validation->set_rules('pass','Contraseña','required|trim|xss_clean|md5');
 $this->form_validation->set_rules('rubro','Rubro','required|trim|xss_clean');

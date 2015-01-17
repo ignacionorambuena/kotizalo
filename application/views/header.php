@@ -23,9 +23,9 @@
 
 
 <ul class="nav navbar-nav navbar-right">
-<li><a href="/login"><div class="btn btn-primary btn-sm btn-block"> <i class="fa fa-group"></i> Ingresar</div></a></li>
-<li><a href="/registrar/empresa"><div class="btn btn-warning btn-sm btn-block"><i class="fa fa-briefcase"></i> Resitra tu Empresa</div></a></li>
-<li><a href="/registrar/usuario"><div class="btn btn-warning btn-sm btn-block"><i class="fa fa-user"></i> Recibir Presupuesto</div></a></li>
+<li><a href="<?php echo base_url('/login');?>"><div class="btn btn-primary btn-sm btn-block"> <i class="fa fa-group"></i> Ingresar</div></a></li>
+<li><a href="<?php echo base_url('/registrar/empresa');?>"><div class="btn btn-warning btn-sm btn-block"><i class="fa fa-briefcase"></i> Resitra tu Empresa</div></a></li>
+<li><a href="<?php echo base_url('/registrar/usuario');?>"><div class="btn btn-warning btn-sm btn-block"><i class="fa fa-user"></i> Recibir Presupuesto</div></a></li>
 <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
 </ul>
 </div>

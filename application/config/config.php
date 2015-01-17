@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://www.kotizalo.com/new';
+$config['base_url']	= 'http://www.kotizalo.com/new/';
 //$config['base_url']	= 'http://localhost/new';
 
 

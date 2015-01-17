@@ -122,7 +122,7 @@ $up = $this->configurar_empresa->actualizar_empresa($idEmp,$nameEmp, $phoneEnc, 
 //si la actualización ha sido correcta creamos una sesión flashdata para decirlo
 if($up)
 {
-echo "<script>alert('Datos actualizados de manera correcta');window.location='/empresa/configurar';</script>";
+echo "<script>alert('Datos actualizados de manera correcta');window.location='".base_url('/empresa/configurar')."';</script>";
 }
 }
 
@@ -220,7 +220,7 @@ $actualizar = $this->configurar_empresa->actualizar_contrasena($idEmp,$actual,$n
 //si la actualización ha sido correcta creamos una sesión flashdata para decirlo
 if($actualizar)
 {
-echo "<script>alert('Contrasena actualizada.');window.location='/empresa/password';</script>";
+echo "<script>alert('Contrasena actualizada.');window.location='".base_url('/empresa')."';</script>";
 
 }
 
